@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+          height: 40%;
+          width: 50%;
+          margin: 10px 10px;
+      }
+        #news-search{
+           
+           width: 50%;
+            display: flex;
+            align-items: center;
+
+        }
+        #search-box{
+            width: 100%;
+            height: 25px;
+            padding: 3px;
+            border-radius: 4px;
+            outline: none;
+        }
+        .search-logos{
+            width: 25px;
+            height: 25px;
+        }
+        hr{
+           width: 50%;
+        }
+        #container{
+            width: 70%;
+            height: 200px;
+           display: flex;
+           flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="news-search">
+<input oninput="debounce(searchNews,1000)" type="text" id="search-box" placeholder="Search News" >
+<img id="searh-logo" class="cursor search-logos" src="https://github.com/pankaj5417/koovs.com/blob/main/icons/search-icon%20(1).png?raw=true" alt="">
+    </div>
+    <hr>
+    <div id="search-div"></div>
+</div>
+</body>
+</html>
+<script src="search.js">
+
+</script>
